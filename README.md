@@ -30,13 +30,13 @@ This is a basic FeedHenry MBaaS Cloud application. Used as a sample backend for 
 + Request (application/json)
     + Body
             {
-              "taskToSave": "world"
+              "taskToSave": "{<task to save>}"
             }
 
 + Response 200 (application/json)
     + Body
             {
-              "returnData": [<array of tasks>]
+              "returnData": "[<array of tasks>]"
             }
 
 
@@ -47,8 +47,8 @@ This is a basic FeedHenry MBaaS Cloud application. Used as a sample backend for 
 + Request (application/json)
     + Body
             {
-              "taskId": <guid of mongo document>,
-              "data": <updated document to persist>
+              "taskId": "<guid of mongo document>"
+              "data": "{<updated document to persist>}"
             }
 
 + Response 200 (application/json)
@@ -65,11 +65,11 @@ This is a basic FeedHenry MBaaS Cloud application. Used as a sample backend for 
 + Request (application/json)
     + Body
             {
-              "taskId": <guid of mongo document>,
+              "taskId": "<guid of mongo document>",
             }
 
 + Response 200 (application/json)
     + Body
             {
-              "returnData": [<array of tasks>]
+              "returnData": "[<array of tasks>]"
             }
