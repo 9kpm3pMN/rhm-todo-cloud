@@ -25,6 +25,7 @@ app.use(express.static(__dirname + '/public'));
 // Note: important that this is added just before your own Routes
 app.use(mbaasExpress.fhmiddleware());
 
+app.use('/health', require('./lib/health-route.js')());
 app.use('/todo', require('./lib/todo.js')());
 app.use('/hello', require('./lib/hello.js')());
 
